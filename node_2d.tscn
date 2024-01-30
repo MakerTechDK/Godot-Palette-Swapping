@@ -1,0 +1,50 @@
+[gd_scene load_steps=15 format=3 uid="uid://xsmv84p3230l"]
+
+[ext_resource type="Script" path="res://node_2d.gd" id="1_2om5l"]
+[ext_resource type="Texture2D" uid="uid://dltqr085iswxb" path="res://cubieWithArms-Sheet.png" id="1_rppwq"]
+[ext_resource type="Shader" path="res://node_2d.gdshader" id="1_vkx0n"]
+[ext_resource type="Script" path="res://Sprite2D.gd" id="2_6qfo8"]
+[ext_resource type="Texture2D" uid="uid://0ukt17iermin" path="res://endesga-32-1x.png" id="2_3543r"]
+[ext_resource type="Texture2D" uid="uid://cpcnu4j1xjl83" path="res://dawnbringer-32-1x.png" id="2_huwnk"]
+[ext_resource type="Texture2D" uid="uid://bpcsxao4ld1c2" path="res://carnival-32-1x.png" id="2_maoh8"]
+[ext_resource type="Texture2D" uid="uid://cq4yw0y0e0vmx" path="res://downgraded-32-1x.png" id="4_74loj"]
+[ext_resource type="Texture2D" uid="uid://cygs1bhab5xsw" path="res://mulfok32-1x.png" id="4_mp024"]
+[ext_resource type="Texture2D" uid="uid://46oga8ode6en" path="res://nanner-32-1x.png" id="5_tk6e3"]
+[ext_resource type="Texture2D" uid="uid://b23jb2oy36g8m" path="res://fantasy-1x.png" id="6_usywm"]
+[ext_resource type="Texture2D" uid="uid://ek2gr76nmodc" path="res://nanner-pancakes-1x.png" id="9_1k7jk"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_pm7q3"]
+shader = ExtResource("1_vkx0n")
+shader_parameter/newPalette = null
+shader_parameter/paletteSize = 32
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_wg8yv"]
+load_path = "res://.godot/imported/endesga-32-1x.png-7697ea03584aeb305add2cc20122d625.ctex"
+
+[node name="Node2D" type="Node2D"]
+script = ExtResource("1_2om5l")
+palettes = Array[Texture2D]([ExtResource("2_maoh8"), ExtResource("2_huwnk"), ExtResource("4_74loj"), ExtResource("2_3543r"), ExtResource("6_usywm"), ExtResource("4_mp024"), ExtResource("5_tk6e3"), ExtResource("9_1k7jk")])
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+material = SubResource("ShaderMaterial_pm7q3")
+position = Vector2(63, 65)
+scale = Vector2(2, 2)
+texture = ExtResource("1_rppwq")
+hframes = 5
+vframes = 4
+script = ExtResource("2_6qfo8")
+palette_texture = SubResource("CompressedTexture2D_wg8yv")
+
+[node name="Sprite2D2" type="Sprite2D" parent="."]
+material = SubResource("ShaderMaterial_pm7q3")
+position = Vector2(64, 31)
+scale = Vector2(4, 4)
+texture = ExtResource("2_3543r")
+script = ExtResource("2_6qfo8")
+palette_texture = SubResource("CompressedTexture2D_wg8yv")
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 0.5
+autostart = true
+
+[connection signal="timeout" from="Timer" to="." method="change_palette"]

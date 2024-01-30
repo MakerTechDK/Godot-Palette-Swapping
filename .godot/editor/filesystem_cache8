@@ -1,0 +1,16 @@
+ea4bc82a6ad023ab7ee23ee620429895
+::res://::1706627615
+carnival-32-1x.png::CompressedTexture2D::3444516095861052207::1706619385::1706627616::1::::<><>::
+cubieWithArms-Sheet.png::CompressedTexture2D::7971565704242228215::1706608945::1706627616::1::::<><>::
+dawnbringer-32-1x.png::CompressedTexture2D::5830629352541687650::1706619385::1706627616::1::::<><>::
+downgraded-32-1x.png::CompressedTexture2D::5957227667056054443::1706619385::1706627616::1::::<><>::
+endesga-32-1x.png::CompressedTexture2D::1796651161454218901::1706619385::1706627616::1::::<><>::
+fantasy-1x.png::CompressedTexture2D::4339871718649262014::1706619385::1706627616::1::::<><>::
+icon.svg::CompressedTexture2D::6853039834322807134::1706608896::1706627616::1::::<><>::
+mulfok32-1x.png::CompressedTexture2D::6470899281074185366::1706619385::1706627616::1::::<><>::
+nanner-32-1x.png::CompressedTexture2D::2100332980159795937::1706619385::1706627616::1::::<><>::
+nanner-pancakes-1x.png::CompressedTexture2D::303050169417903408::1706619385::1706627616::1::::<><>::
+node_2d.gd::GDScript::-1::1706618888::0::1::::<>Node2D<>::
+node_2d.gdshader::Shader::-1::1706627501::0::1::::<><>::
+node_2d.tscn::PackedScene::1652270087622947205::1706619564::0::1::::<><>::res://node_2d.gd<>uid://dltqr085iswxb::::res://cubieWithArms-Sheet.png<>res://node_2d.gdshader<>res://Sprite2D.gd<>uid://0ukt17iermin::::res://endesga-32-1x.png<>uid://cpcnu4j1xjl83::::res://dawnbringer-32-1x.png<>uid://bpcsxao4ld1c2::::res://carnival-32-1x.png<>uid://cq4yw0y0e0vmx::::res://downgraded-32-1x.png<>uid://cygs1bhab5xsw::::res://mulfok32-1x.png<>uid://46oga8ode6en::::res://nanner-32-1x.png<>uid://b23jb2oy36g8m::::res://fantasy-1x.png<>uid://ek2gr76nmodc::::res://nanner-pancakes-1x.png
+Sprite2D.gd::GDScript::-1::1706618298::0::1::::<>Sprite2D<>::
